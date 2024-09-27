@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <!-- viewport is used to reliably get the accurate dimensions of the clients device (for responsive webpages) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* id = # */
+        /* class = . */
+        /* tag = tag name (e.g. body) */
+        body
+        {
+            width: 750px;
+            margin: auto;
+            margin-top: 200px;
+        }
+        @keyframes rotation
+        {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        img
+        {
+            /* transform: scale(1); */
+            /* transform: translateX(-100px) translateY(100); */
+            /* transform: rotate(0deg); */
+            /* transform: skew(20deg, 20deg); */
+            /* transform: scale(2) rotate(45deg); */
+            /* animation: rotation 2s infinite linear; */
+            transition: transform 5s;
+        }
+        img:hover
+        {
+            transform: scale(2) rotate(45deg);
+        }
+        .color
+        {
+
+        }
+    </style>
+</head>
+<body>
+    <img src="CSS3-Transforms.png">
+    <h3 class="color">Text Color</h3>
+</body>
+</html>
