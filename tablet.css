@@ -1,65 +1,100 @@
 @charset "UTF-8";
-@media only screen and (min-width : 481px)
+@media only screen and (min-width : 481px) {
+
+/* main tag formatting */
+body
 {
-body {
-    color: white;
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    padding:0px;
-    margin:0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: gray;
 }
-h1,h2,h3,h4,h5,h6,p,li {
-    margin-left:15px;
-    margin-top:0px;
+#wrapper
+{
+    background-color: cornflowerblue;
 }
-#wrapper {
+footer
+{
+    clear: both;
+}
+.hardBreak
+{
+    clear: both;
+}
+/* top navigation bar */
+.mainNav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 800px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+.Profile_Icon
+{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.NavLink
+{
+    padding-left: 5px;
+    background-color: brown;
+}
+/* about page */
+/* about right side content */
+#aboutAside
+{
+    position: fixed;
+    right: 0;
+    top: 55px;
+    background-color: aquamarine;
+    width: 30%;
+}
+#aboutAsideFigure
+{
+    background-color: green;
     margin-left: auto;
     margin-right: auto;
-    background-color:DarkGrey;
+    width: 80%;
 }
-#right-column {
+#selfPhoto
+{
     width: 100%;
-    float: none;
-    height: 600px;
-    background-color: DarkOrange;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
-#left-column {
+#aboutAsideFigureCaption
+{
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+/* about page content */
+.pageContent
+{
+    width: 70%;
+    background-color: yellowgreen;
+}
+#aboutVideoLink
+{
+    background-color: blueviolet;
+}
+#aboutVideo
+{
     width: 100%;
-    float: none;
-    height:120px;
 }
-#footer {
-    height:80px;
-    background-color:black;
-}
-#banner{
-    height:60px;
-    background-color:black;
-}
-.box {
-    width: 45%;
-    min-height:120px;
+/* project page */
+.projBox
+{
     float: left;
-    background-color:black;
-    margin: 15px;
-    opacity:1;
-}
-.button {
-    font-size:x-large;
-    text-decoration:none;
-    background-color:LightBlue;
-    display:block;
-    width:25%;float:left;
-    padding:8px;
-    margin:5px;
-    border-radius:15px;
-    box-shadow:5px 5px 3px gray;
-}
-.button:hover {
-    box-shadow:5px 5px 3px black;
-}
-.clear{
-    clear: both;
+    margin: 5px;
+    background-color: burlywood;
+    width: 200px;
+    height: 200px;
 }
 }

@@ -1,56 +1,31 @@
 @charset "UTF-8";
+/* @media only screen and (min-width : 481px) */
 body
 {
-    background-color: black;
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    padding:0px;
-    margin:0px;
+ font-family: 'Times New Roman', Times, serif;
 }
-h1,h2,h3,h4,h5,h6,p,li
+/* #wrapper
 {
-    margin-left:15px;
+
+} */
+.mainNav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
 }
-#wrapper
+.Profile_Icon
 {
-    width: 66%;
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:LightSlateGrey;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
 }
-#right-column
+.NavLink
 {
-    float: right;
-    width: 66%;
-    height: 600px;
-    background-color:LightGray;
-}
-#left-column
-{
-    float: left;
-    width: 33%;
-    background-color:silver;
-    height:600px;
-}
-#footer
-{
-    height:80px;
-}
-#banner
-{
-    height:120px;
-    background-color:SlateGrey;
-}
-.box
-{
-    height: 150px;
-    width: 33%;
-    float: left;
-    background-color:tan;
-    margin: 15px;
-    opacity:.5;
-}
-.clear
-{
-    clear: both;
+    padding-left: 5px;
+    background-color: brown;
 }
