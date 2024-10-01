@@ -23,15 +23,40 @@
             <br><br>
             <h1 class="pageTitle">Contact Information</h1>
         </header>
+        <main>
+            <form action="notSet" method="post" enctype="text/plain" ?subject=Contact name="form">
+                <p>
+                    <label class="inputLabel" for="name">Name : </label>
+                    <br>
+                    <input class="inputBox" type="text" name="name" placeholder="" size="32" required>
+                </p>
+                <p>
+                    <label class="inputLabel" for="email">Email : </label>
+                    <br>
+                    <input class="inputBox" type="email" name="email" placeholder="" size="48" required>
+                </p>
+                <p>
+                    <label class="inputLabel" for="message">Message : </label>
+                    <br>
+                    <textarea class="inputBox" name="message" cols="40" rows="8"></textarea>
+                </p>
+                <p>
+                    <input id="formSubmit" type="submit" value="Submit">
+                    <input id="formReset" type="reset" value="Reset">
+                </p>
 
+            </form>
+
+        </main>
         <footer>
 
             <address>
                 <p>
                     Contact me at 
-                    <a><!-- href="mailto:developer@example.ca" leaving <a> tags intentionally-->
+                    <a><!-- href="mailto:developer@example.ca" leaving <a> tags intentionally -->
                         developer@example.com
                     </a>
+                    &copy
                 </p>
             </address>
         </footer>

@@ -39,7 +39,7 @@ footer
 .NavLink
 {
     padding-left: 5px;
-    background-color: brown;
+    background-color: green;
 }
 /* about page */
 /* about right side content */
@@ -97,4 +97,40 @@ footer
     width: 200px;
     height: 200px;
 }
+/* Contact Page */
+.inputLabel
+{
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+    background-color: lightpink;
+}
+.inputBox
+{
+    position: relative;
+    left: 5px;
+}
+#formSubmit
+{
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+    background: red;
+    background: -moz-linear-gradient(to right ,red, orange);
+    background: -webkit-linear-gradient(to right ,red, orange);
+    background: -o-linear-gradient(to right ,red, orange);
+    background: linear-gradient(to right ,red, orange);
+}
+#formReset
+{
+    font-size: 20px;
+    position: relative;
+    left: 5px;
+    background: blue;
+    background: -moz-linear-gradient(20deg,blue, aquamarine);
+    background: -webkit-linear-gradient(0deg,blue, aquamarine);
+    background: -o-linear-gradient(0deg,blue, aquamarine);
+    background: linear-gradient(45deg,blue, aquamarine);
+}
+
 }
