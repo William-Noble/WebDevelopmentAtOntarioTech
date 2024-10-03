@@ -6,10 +6,14 @@ body
 {
     font-family: 'Times New Roman', Times, serif;
     background-color: gray;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 #wrapper
 {
     background-color: cornflowerblue;
+    min-width: 100%;
 }
 footer
 {
@@ -23,6 +27,7 @@ footer
 .mainNav
 {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,12 +46,34 @@ footer
     padding-left: 5px;
     background-color: green;
 }
+/* Index Page */
+/* Title Section */
+.titleHolder
+{
+    position: relative;
+    text-align: center;
+    height: fit-content;
+}
+.pageTitle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 50px;
+}
+.mountains
+{
+    width: 100%;
+}
 /* about page */
 /* about right side content */
 #aboutAside
 {
-    position: fixed;
-    right: 0;
+    position: sticky;
+    left: 100%;
+    float: right;
     top: 55px;
     background-color: aquamarine;
     width: 30%;
@@ -97,40 +124,61 @@ footer
     width: 200px;
     height: 200px;
 }
+.projLink
+{
+    /* makes entire project box clickable */
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 /* Contact Page */
+#formHolder
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+#contactForm
+{
+    background-color: aqua;
+    padding: 2%;
+}
 .inputLabel
 {
     font-size: 20px;
-    position: relative;
-    left: 5px;
     background-color: lightpink;
 }
-.inputBox
+/* .inputBox
 {
-    position: relative;
-    left: 5px;
+    
+} */
+#buttonHolder
+{
+    display: flex;
+    justify-content: center;
 }
 #formSubmit
 {
+    /* Linear Gradient */
     font-size: 20px;
-    position: relative;
-    left: 5px;
-    background: red;
-    background: -moz-linear-gradient(to right ,red, orange);
-    background: -webkit-linear-gradient(to right ,red, orange);
-    background: -o-linear-gradient(to right ,red, orange);
-    background: linear-gradient(to right ,red, orange);
+    border-radius: 10%;
+    background: green;
+    background: -moz-linear-gradient(to right ,#009900, #00CC00);
+    background: -webkit-linear-gradient(to right ,#009900, #00CC00);
+    background: -o-linear-gradient(to right ,#009900, #00CC00);
+    background: linear-gradient(to right ,#009900, #00CC00);
 }
 #formReset
 {
+    /* Angular Gradient */
     font-size: 20px;
-    position: relative;
-    left: 5px;
-    background: blue;
-    background: -moz-linear-gradient(20deg,blue, aquamarine);
-    background: -webkit-linear-gradient(0deg,blue, aquamarine);
-    background: -o-linear-gradient(0deg,blue, aquamarine);
-    background: linear-gradient(45deg,blue, aquamarine);
+    border-radius: 10%;
+    background: red;
+    background: -moz-linear-gradient(45deg,#990000, #FF0000);
+    background: -webkit-linear-gradient(45deg,#990000, #FF0000);
+    background: -o-linear-gradient(45deg,#990000, #FF0000);
+    background: linear-gradient(45deg,#990000, #FF0000);
 }
 
 }
