@@ -15,33 +15,41 @@
         <header>
             <nav class="mainNav">
                 <a href="about.html"><img class="Profile_Icon" src="Profile_Icon.png"></a>
+                &nbsp
                 <a class="NavLink" href="about.html">About Me</a>
+                &nbsp
                 <a class="NavLink" href="index.html">Home</a>
+                &nbsp
                 <a class="NavLink" href="projects.html">Projects</a>
+                &nbsp
                 <a class="NavLink" href="contact.html">Contact</a>
+                <a class="NavTop" href="#wrapper">Back To Top</a>
             </nav>
             
         </header>
         <main>
             <div class="titleHolder">
                 <!-- img below was taken from pixabay.com and is royalty free -->
-                <img class="mountains" src="mountainsCropped.jpg">
+                <img class="mountains" src="AboutMeMountain.jpg">
                 <h1 class="pageTitle">About Me</h1>
             </div>
             <aside id="aboutAside">
                 <figure id="aboutAsideFigure">
-                    <img id="selfPhoto" src="Sadie.jpg">
+                    <img id="selfPhoto" src="Sadie.jpg" alt="Photo of a german shepherd dog">
                     <figcaption id="aboutAsideFigureCaption">
                         My name is William Noble, welcome to my website.
                     </figcaption>
                 </figure>
                 <nav id="aboutNav">
-                    <ul>
+                    <ul style="list-style:none; padding: 0;">
                         <li>
                             <a class="asideNav" href="#aboutVideoLink">Intro Video</a>
                         </li>
                         <li>
                             <a class="asideNav" href="#aboutBasicInfo">Basic Info</a>
+                        </li>
+                        <li>
+                            <a class="asideNav" href="#aboutHobbies">My Hobbies</a>
                         </li>
                         <li>
                             <a class="asideNav" href="#aboutGoals">My Goals</a>
@@ -50,15 +58,17 @@
                 </nav>
             </aside>
             <section class="pageContent">
-                <article id="aboutVideoLink">
+                <article class="aboutContentContainer" id="aboutVideoLink">
                     <h2 class="sectionTitle">Introductory Video</h2>
                     <video controls poster="Pluto_on_stairs.PNG" preload="auto" loop muted id="aboutVideo">
                         <!-- Every video I tried to record was completely ruined when I tried to convert it to mp4 and ogv formats -->
-                        <source src="mountainWithStars.mp4" type="video/mp4">
-                        <source src="mountainWithStars.ogv" type="video/ogg">
+                        <source src="SelfVideo.mp4" type="video/mp4">
+                        <source src="SelfVideo.ogv" type="video/ogg">
                     </video>
                     <br>
-                    <button id="playPauseBtn" onclick="PlayPause()">Play Pause Button</button>
+                    <div id="playPauseBtnHolder">
+                        <button id="playPauseBtn" onclick="PlayPause()">Play Pause Button</button>
+                    </div>
                     <script>
                         var mybtn=document.getElementById("aboutVideo");
                         function PlayPause()
@@ -70,8 +80,8 @@
                         }
                     </script>
                 </article>
-                <br id="aboutBasicInfo">
-                <article>
+                <hr class="sectionDivider">
+                <article class="aboutContentContainer" id="aboutBasicInfo">
                     <h2 class="sectionTitle">Basic Information</h2>
                     <p class="sectionContent">
                         Name: William Noble
@@ -85,27 +95,51 @@
                     </p>
                     <div id="selfPortraitHolder">
                         <!-- I worked so hard on this -->
-                        <img id="selfPortrait" src="selfPortrait.jpg">
+                        <img id="selfPortrait" src="selfPortrait.jpg" alt="Very well drawn image of William Noble">
                     </div>
                         
                 </article>
-                <br id="aboutGoals">
-                <article>
+                <hr class="sectionDivider">
+                <article class="aboutContentContainer" id="aboutHobbies">
+                    <h2 class="sectionTitle">Hobbies</h2>
+                    <p class="sectionContent">
+                        William is often a solitary creature which is reflected by his choice in hobbies.
+                        When alone William is drawn towards reading books, playing video games and riding his bike/hiking through the forest.
+                        <br><br>
+                        Books:
+                        <br>
+                        He enjoys a wide variety of book genres ranging from mystery to fantasy and science fiction.
+                        The current fixation (and main source of procrastination) is a series called The Wanderer written by Simon Goodson.
+                        <br><br>
+                        Video games:
+                        <br>
+                        William has found himself enjoying co-op games recently, mainly playing HD2 and Minecraft.
+                    </p>
+                </article>
+                <hr class="sectionDivider">
+                <article class="aboutContentContainer" id="aboutGoals">
                     <h2 class="sectionTitle">Goals</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie metus tellus, sollicitudin euismod metus tincidunt eu. Vivamus eleifend, nulla sit amet blandit hendrerit, velit sapien varius erat, vitae maximus est urna id ex. In tortor justo, rutrum vitae convallis in, iaculis id massa. Cras facilisis eros enim, vitae accumsan lacus posuere sagittis. Vivamus lobortis ac arcu sit amet lobortis. Fusce egestas, sem tempor rutrum eleifend, ligula magna hendrerit ante, vel egestas enim nibh sed felis. Maecenas in ipsum tincidunt, aliquam enim et, interdum tortor. Phasellus vel felis dictum, mollis sem et, pulvinar felis. Aliquam massa ligula, aliquam a lacus vel, ornare tempor odio. Duis malesuada dolor vel accumsan convallis.</p>
-                    <p> Cras condimentum mauris in quam facilisis, et dignissim sem tempus. Etiam ut efficitur augue, non tincidunt nisi. Vivamus nisl nisl, pulvinar in imperdiet non, tristique eget lorem. Vestibulum rutrum magna quis mi sollicitudin mattis. Morbi nec sem at dui ullamcorper pretium. Nam vitae interdum quam. Suspendisse lacus ante, facilisis nec volutpat id, suscipit at eros. Donec massa purus, convallis ut felis eu, finibus iaculis ipsum. Phasellus ac dolor sem.</p>
-                    <p> In vel blandit nulla, commodo fringilla magna. Aenean ut aliquet augue, vel hendrerit turpis. Aliquam tincidunt pharetra felis, at viverra felis lacinia egestas. Aenean vel nibh felis. Pellentesque sed lectus diam. Nam gravida sit amet mauris vitae euismod. Nullam ultricies, arcu tempor dictum vulputate, elit felis ultrices orci, at blandit ante leo in nisi. Donec egestas egestas odio a tempus. Aenean semper convallis mauris et tempus. Aliquam eu leo in sapien imperdiet egestas.</p>
+                    <p class="sectionContent">
+                        In terms of goals, William only has 2 very basic ideas.
+                    </p>
+                        <ul style="color: white;">
+                            <li>Turn this project in on time</li>
+                            <li>Graduate</li>
+                        </ul>
+                    <p class="sectionContent">
+                        The advantage of only 2 basic goals is that the solution for both is simple: an unhealthy amount of caffeine.
+                    </p>
                 </article>
             </section>
         </main>
         <footer>
-
+            <hr class="sectionDivider">
             <address>
                 <p>
-                    Contact me at 
-                    <a><!-- href="mailto:developer@example.ca" leaving <a> tags intentionally-->
-                        developer@example.com
-                    </a>
+                    Don't Contact me at 
+                    <a class="defaultLink" href="mailto:william.noble1@ontariotechu.net">william.noble1@ontariotechu.net</a>
+                    <br><br>
+                    &copy William Noble 2024
                 </p>
             </address>
         </footer>

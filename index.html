@@ -15,44 +15,52 @@
         <header>
             <nav class="mainNav">
                 <a href="about.html"><img class="Profile_Icon" src="Profile_Icon.png"></a>
+                &nbsp
                 <a class="NavLink" href="about.html">About Me</a>
+                &nbsp
                 <a class="NavLink" href="index.html">Home</a>
+                &nbsp
                 <a class="NavLink" href="projects.html">Projects</a>
+                &nbsp
                 <a class="NavLink" href="contact.html">Contact</a>
+                <a class="NavTop" href="#wrapper">Back To Top</a> <!-- I did not expect this to work -->
             </nav>
         </header>
         <main>
             <div class="titleHolder">
                 <!-- img below was taken from pixabay.com and is royalty free -->
-                <img class="mountains" src="mountainsCropped.jpg">
+                <img class="mountains" src="HomeMountain.jpg">
                 <h1 class="pageTitle">Home Page</h1>
             </div>
             <section>
                 <article>
                     <h2 class="sectionTitle">Introduction</h2>
-                    <p>Hello and welcome to my website. Below is a brief introduction to the content located on each page. I am sorry in advance, good luck.</p>
+                    <p class="sectionContent">Hello and welcome to my website. Below is a brief introduction to the content located on each page. I am sorry in advance, good luck.</p>
                 </article>
+                <hr class="sectionDivider">
                 <article>
-                    <a href="about.html"><h2 class="sectionTitle">About Me Page</h2></a>
-                    <p>On this page I provide an overview of who I am and how I ended up in this mess. The about me page is full of interesting information such as the fact that I am human.</p>
+                    <a class="defaultLink" href="about.html"><h2 class="sectionTitle">About Me Page</h2></a>
+                    <p class="sectionContent">On this page I provide an overview of who I am and how I ended up in this mess. The about me page is full of interesting information such as the fact that I am human.</p>
                 </article>
+                <hr class="sectionDivider">
                 <article>
-                    <a href="projects.html"><h2 class="sectionTitle">Projects Page</h2></a>
-                    <p>Here you can find an interactive list of many of the projects I have had the opportunity to work on. The code is barely comprehensible and poorly optimized, as such in my dedication to not melt CPUs, I will not be providing the source code for any projects.</p>
+                    <a class="defaultLink" href="projects.html"><h2 class="sectionTitle">Projects Page</h2></a>
+                    <p class="sectionContent">Here you can find an interactive list of many of the projects I have had the opportunity to work on. The code is barely comprehensible and poorly optimized, as such in my dedication to not melt CPUs, I will not be providing the source code for any projects.</p>
                 </article>
+                <hr class="sectionDivider">
                 <article>
-                    <a href="contact.html"><h2 class="sectionTitle">Contact Me Page</h2></a>
-                    <p>This is where I encourage users to contact me. If users ever do contact me, I will cry.</p>
+                    <a class="defaultLink" href="contact.html"><h2 class="sectionTitle">Contact Me Page</h2></a>
+                    <p class="sectionContent">This is where I encourage users to contact me. If users ever do contact me, I will cry.</p>
                 </article>
             </section>
         </main>
         <footer>
-            <hr color="#000099">
+            <hr class="sectionDivider">
             <address>
                 <p>
                     Don't Contact me at 
-                    <a href="mailto:william.noble1@ontariotechu.net">william.noble1@ontariotechu.net</a>
-                    <br>
+                    <a class="defaultLink" href="mailto:william.noble1@ontariotechu.net">william.noble1@ontariotechu.net</a>
+                    <br><br>
                     &copy William Noble 2024
                 </p>
             </address>
